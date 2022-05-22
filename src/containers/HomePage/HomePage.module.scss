@@ -6,14 +6,17 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    min-height: 100vh;
+}
 
-    div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 60%;
-        height: 80%;
-    }
+.wrapper {
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+.stickurs {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-column-gap: 2vw;
+    grid-row-gap: 4vw;
+    padding: 0;
 }

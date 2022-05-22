@@ -12,18 +12,22 @@ export function HomePage() {
     }, []);
     return (
         <main className={styles.main}>
-            <div>
-                {stickurs.length &&
-                    stickurs.map((stickur, idx) => {
-                        return (
-                            <div key={idx}>
-                                <p>
-                                    {stickur.id} - {stickur.flavourName} -{" "}
-                                    {stickur.creationStatus}
-                                </p>
-                            </div>
-                        );
-                    })}
+            <div className={styles.wrapper}>
+                <div className={styles.stickurs}>
+                    {stickurs.length &&
+                        stickurs.map((stickur, idx) => {
+                            return (
+                                <div key={idx}>
+                                    <p>
+                                        {stickur.id} - {stickur.name} -{" "}
+                                        {stickur.price} - {stickur.quantity} -{" "}
+                                        {stickur.size} - {stickur.imageUrl} -{" "}
+                                        {stickur.favourite}
+                                    </p>
+                                </div>
+                            );
+                        })}
+                </div>
             </div>
         </main>
     );

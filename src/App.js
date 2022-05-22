@@ -5,6 +5,7 @@ import { HomePage } from "./containers/HomePage/HomePage";
 import { Nav } from "./containers/Nav/Nav";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CreatePage from "./containers/CreatePage/CreatePage";
+import Stickur from "./containers/Stickur/Stickur";
 
 export default function App() {
     return (
@@ -14,6 +15,7 @@ export default function App() {
                 <Routes>
                     <Route path="/stickur/" element={<HomePage />} />
                     <Route path="/stickur/create" element={<CreatePage />} />
+                    <Route path="/stickur/:id" element={<Stickur />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>

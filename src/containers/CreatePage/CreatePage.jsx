@@ -23,20 +23,41 @@ const CreatePage = () => {
                 <h2>Create a stickur</h2>
                 <form onSubmit={handleSubmit}>
                     <div>
-                        <label htmlFor="flavourName">Flavour Name</label>
+                        <label htmlFor="quantity">Quantity:</label>
                         <input
-                            id="flavourName"
-                            name="flavourName"
+                            id="quantity"
+                            name="quantity"
+                            type="number"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="size">Size:</label>
+                        <input id="size" name="size" type="text" required />
+                    </div>
+                    <div>
+                        <label htmlFor="price">Price:</label>
+                        <input id="price" name="price" type="number" required />
+                    </div>
+                    <div>
+                        <label htmlFor="name">Name:</label>
+                        <input id="name" name="name" type="text" required />
+                    </div>
+                    <div>
+                        <label htmlFor="imageUrl">ImageUrl:</label>
+                        <input
+                            id="imageUrl"
+                            name="imageUrl"
                             type="text"
                             required
                         />
                     </div>
                     <div>
-                        <label htmlFor="creationStatus">Creation Status</label>
+                        <label htmlFor="favourite">Favourite:</label>
                         <input
-                            id="creationStatus"
-                            name="creationStatus"
-                            type="text"
+                            id="favourite"
+                            name="favourite"
+                            type="checkbox"
                             required
                         />
                     </div>
