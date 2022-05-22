@@ -3,19 +3,19 @@ import "firebase/compat/firestore";
 import "firebase/compat/app";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBY4zy6Vc9na9F2oDkYiytNZhbHGxKvf_Q",
+    apiKey: "AIzaSyBDI9ti0nTnPgD46G2sqenIBI2bH8Tahoc",
 
-    authDomain: "latvia-firestore-e8a03.firebaseapp.com",
+    authDomain: "stickur-371ea.firebaseapp.com",
 
-    projectId: "latvia-firestore-e8a03",
+    projectId: "stickur-371ea",
 
-    storageBucket: "latvia-firestore-e8a03.appspot.com",
+    storageBucket: "stickur-371ea.appspot.com",
 
-    messagingSenderId: "375336370943",
+    messagingSenderId: "433149896911",
 
-    appId: "1:375336370943:web:267eb037548329e69782ca",
+    appId: "1:433149896911:web:b238a376674620de88efba",
 
-    measurementId: "G-SZJDG1HMH1",
+    measurementId: "G-8X84T8Q8YV",
 };
 
 firebase.initializeApp(firebaseConfig); // Initialize Firebase

@@ -1,0 +1,13 @@
+@use "./scss/typography.module";
+@use "./scss/mixins.module";
+@use "./scss/palette.module" as p;
+
+.App {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    min-height: calc(100% + constant(safe-area-inset-top));
+    min-height: calc(100% + env(safe-area-inset-top));
+
+    background-color: map-get(p.$dark-theme-colors, primary);
+}

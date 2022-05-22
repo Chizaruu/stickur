@@ -1,0 +1,19 @@
+@use "./../../scss/palette.module" as p;
+@use "./../../scss/mixins.module" as m;
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 60%;
+        height: 80%;
+    }
+}
