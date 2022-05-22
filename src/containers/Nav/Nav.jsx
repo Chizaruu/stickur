@@ -8,34 +8,30 @@ import cart from "./images/cart.png";
 export function Nav() {
     return (
         <nav className={styles.navbar}>
-            <div>
-                <div>
-                    <Link to="/">Shop</Link>
-                    <Link to="/create">Create</Link>
-                    <Link to="/about">About</Link>
-                    <Link to="/contact">Contact</Link>
-                </div>
-                <div>
-                    <h1>
-                        <Link to="/">Stickur</Link>
-                    </h1>
-                </div>
+            <div className={styles.navbar__links}>
+                <Link to="/stickur/">Shop</Link>
+                <Link to="/stickur/create">Create</Link>
+                <Link to="/stickur/about">About</Link>
+                <Link to="/stickur/contact">Contact</Link>
             </div>
-            <div>
+            <div className={styles.navbar__title}>
+                <Link to="/stickur/">
+                    <h2>Stickur</h2>
+                </Link>
+            </div>
+            <div className={styles.navbar__wrapper}>
                 <div>
-                    <a href="https://www.instagram.com/stickurs/">
+                    <a href="https://www.instagram.com/stickur/">
                         <img src={instagram} alt="instagram" />
                     </a>
-                    <a href="https://www.facebook.com/stickurs/">
+                    <a href="https://www.facebook.com/stickur/">
                         <img src={facebook} alt="facebook" />
                     </a>
                 </div>
-                <div>
-                    <Link to="/cart">
-                        <img src={cart} alt="cart" />
-                        <span className={styles.cartCount}>0</span>
-                    </Link>
-                </div>
+                <Link to="/cart">
+                    <img src={cart} alt="cart" />
+                    <span>0</span>
+                </Link>
             </div>
         </nav>
     );

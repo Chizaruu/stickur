@@ -12,8 +12,8 @@ export default function App() {
             <BrowserRouter>
                 <Nav />
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="createStickur" element={<CreatePage />} />
+                    <Route path="/stickur/" element={<HomePage />} />
+                    <Route path="/stickur/create" element={<CreatePage />} />
                 </Routes>
                 <HomePage />
                 <Footer />
