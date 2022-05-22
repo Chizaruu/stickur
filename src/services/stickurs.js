@@ -8,7 +8,7 @@ export const getAllStickurs = async () => {
     return raw.docs.map(cleanDocument);
 };
 
-export const findByIdStickur = async (id) => {
+export const findById = async (id) => {
     const documentSnapshot = await firestore
         .collection("stickurs")
         .doc(id)
@@ -21,6 +21,6 @@ export const findByIdStickur = async (id) => {
     return cleanDocument(documentSnapshot);
 };
 
-export const createRecordStickur = async (data) => {
+export const createRecord = async (data) => {
     await firestore.collection("stickurs").add(data);
 };

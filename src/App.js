@@ -4,6 +4,7 @@ import { Footer } from "./containers/Footer/Footer";
 import { HomePage } from "./containers/HomePage/HomePage";
 import { Nav } from "./containers/Nav/Nav";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CreatePage from "./containers/CreatePage/CreatePage";
 
 export default function App() {
     return (
@@ -12,6 +13,7 @@ export default function App() {
                 <Nav />
                 <Routes>
                     <Route path="/" element={<HomePage />} />
+                    <Route path="createStickur" element={<CreatePage />} />
                 </Routes>
                 <HomePage />
                 <Footer />
