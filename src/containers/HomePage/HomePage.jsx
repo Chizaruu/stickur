@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import styles from "./Main.module.scss";
+import styles from "./HomePage.module.scss";
 
-export function Main() {
+export function HomePage() {
     return <main className={styles}></main>;
 }
