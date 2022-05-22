@@ -15,7 +15,6 @@ export default function App() {
                     <Route path="/stickur/" element={<HomePage />} />
                     <Route path="/stickur/create" element={<CreatePage />} />
                 </Routes>
-                <HomePage />
                 <Footer />
             </BrowserRouter>
         </div>
