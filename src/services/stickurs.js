@@ -24,3 +24,7 @@ export const findById = async (id) => {
 export const createRecord = async (data) => {
     await firestore.collection("stickurs").add(data);
 };
+
+export const updateRecord = async (id, data) => {
+    await firestore.collection("stickurs").doc(id).update(data);
+};

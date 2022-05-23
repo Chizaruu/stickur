@@ -7,6 +7,9 @@ footer {
     align-items: center;
     text-align: center;
     height: 5vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
     span {
         display: inline-flex;

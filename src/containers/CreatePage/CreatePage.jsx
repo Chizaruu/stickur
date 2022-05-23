@@ -58,10 +58,15 @@ const CreatePage = () => {
                             id="favourite"
                             name="favourite"
                             type="checkbox"
-                            required
                         />
                     </div>
-
+                    <div>
+                        <label htmlFor="category">Category:</label>
+                        <select id="category" name="category" required>
+                            <option value="cute">Cute</option>
+                            <option value="meme">Meme</option>
+                        </select>
+                    </div>
                     <button type="submit">Submit Data</button>
                 </form>
             </div>
