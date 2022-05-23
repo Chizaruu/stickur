@@ -5,11 +5,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    padding: 2vw;
-
-    min-height: calc(100% + constant(safe-area-inset-top));
-    min-height: calc(100% + env(safe-area-inset-top));
+    height: 104vh;
+    padding: 4vw;
 
     overflow: -moz-scrollbars-vertical;
     overflow-y: scroll;

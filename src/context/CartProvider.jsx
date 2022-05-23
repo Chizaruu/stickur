@@ -16,7 +16,6 @@ export const CartProvider = ({ children }) => {
 
     useEffect(() => {
         console.log("Cart updated");
-        console.log(cart);
     }, [cart]);
 
     return (
