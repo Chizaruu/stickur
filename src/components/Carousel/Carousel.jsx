@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Carousel({ stickurs }) {
     return (
         <div>
-            <h2>Trending now</h2>
+            <h2 className={styles.title}>Trending now</h2>
             <div className={styles.outer_box}>
                 {stickurs.length &&
                     stickurs.map((stickur, idx) => {
