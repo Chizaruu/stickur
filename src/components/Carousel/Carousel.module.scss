@@ -9,9 +9,11 @@ h2 {
 }
 
 .outer_box {
-    width: 500px;
+    width: 50%;
     height: 350px;
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
     overflow: auto;
     scroll-snap-type: x mandatory;
 }
