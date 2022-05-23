@@ -44,27 +44,22 @@ export default function Stickur() {
                             <div>
                                 <div>
                                     <label htmlFor="size">Size:</label>
-                                    <select id="size">
-                                        <option
-                                            value="S"
-                                            defaultValue={stickur.size === "S"}
-                                        >
+                                    <select
+                                        id="size"
+                                        name="size"
+                                        defaultValue={stickur.size}
+                                    >
+                                        <option value="S">
                                             {stickur.size === "S"
                                                 ? "S"
                                                 : "S (Not Available)"}
                                         </option>
-                                        <option
-                                            value="M"
-                                            defaultValue={stickur.size === "M"}
-                                        >
+                                        <option value="M">
                                             {stickur.size === "M"
                                                 ? "M"
                                                 : "M (Not Available)"}
                                         </option>
-                                        <option
-                                            value="L"
-                                            defaultValue={stickur.size === "L"}
-                                        >
+                                        <option value="L">
                                             {stickur.size === "L"
                                                 ? "L"
                                                 : "L (Not Available)"}

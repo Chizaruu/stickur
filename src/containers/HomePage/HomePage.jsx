@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import styles from "./HomePage.module.scss";
 import { getAllStickurs } from "../../services/stickurs";
 import { Link } from "react-router-dom";
+import Carousel from "../../components/Carousel/Carousel";
 
 export function HomePage() {
     const [stickurs, setStickurs] = useState([]);
@@ -18,6 +19,7 @@ export function HomePage() {
     }, []);
     return (
         <main className={styles.main}>
+            <Carousel stickurs={stickurs} />
             <div className={styles.wrapper}>
                 <div className={styles.button_container}>
                     <button value="all" onClick={handleCategoryChange}>
@@ -38,7 +40,8 @@ export function HomePage() {
                         stickurs.map((stickur, idx) => {
                             if (
                                 category === "all" ||
-                                stickur.category === category
+                                stickur.category === category ||
+                                (category === "favourite" && stickur.favourite)
                             ) {
                                 return (
                                     <div className={styles.stickur} key={idx}>

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+}
+
+.outer_box {
+    width: 500px;
+    height: 350px;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.outer_box .inner_box {
+    flex: 0 0 400px;
+    height: 100%;
+    display: grid;
+    scroll-snap-align: start;
+    place-items: center;
+    font-size: 80px;
+    color: #fff;
+
+    img {
+        width: 350px;
+        height: 250px;
+    }
+
+    p {
+        text-align: center;
+    }
+}

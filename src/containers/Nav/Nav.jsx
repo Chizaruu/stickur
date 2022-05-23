@@ -5,12 +5,12 @@ import instagram from "./images/instagram.png";
 import facebook from "./images/facebook.png";
 import cart from "./images/cart.png";
 
+//<Link to="/stickur/create">Create</Link>; Use for CreatePage
 export function Nav() {
     return (
         <nav className={styles.navbar}>
             <div className={styles.navbar__links}>
                 <Link to="/stickur/">Shop</Link>
-                <Link to="/stickur/create">Create</Link>
                 <Link to="/stickur/about">About</Link>
                 <Link to="/stickur/contact">Contact</Link>
             </div>
